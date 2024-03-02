@@ -183,7 +183,7 @@ This demo is supposed to show how we can leverage Document Retrival for Lawyers 
     ) and not st.session_state.random_question_requested
 
     # Check the connection
-    with st.spinner("⌛️ &nbsp;&nbsp; Haystack is starting..."):
+    with st.spinner("⌛️ &nbsp;&nbsp; Retriver Backend is starting..."):
         if not haystack_is_ready():
             st.error("🚫 &nbsp;&nbsp; Connection Error. Is Haystack running?")
             run_query = False
@@ -195,9 +195,7 @@ This demo is supposed to show how we can leverage Document Retrival for Lawyers 
         st.session_state.question = question
 
         with st.spinner(
-            "🧠 &nbsp;&nbsp; Performing neural search on documents... \n "
-            "Do you want to optimize speed or accuracy? \n"
-            "Check out the docs: https://haystack.deepset.ai/usage/optimization "
+            "🧠 &nbsp;&nbsp; Performing search on documents... \n "
         ):
             try:
                 st.session_state.results, st.session_state.raw_json = query(
