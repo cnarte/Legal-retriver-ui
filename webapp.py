@@ -53,7 +53,7 @@ def main():
     st.write("# Legal Document Retriver Demo")
     st.markdown(
         """
-This demo is supposed to show how we can leverage Document Retrival for Lawyers during work. It
+This demo is supposed to show how we can leverage Document Retrival for Lawyers during work. 
 """,
         unsafe_allow_html=True,
     )
