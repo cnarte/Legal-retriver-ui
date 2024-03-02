@@ -76,7 +76,7 @@ This demo is supposed to show how we can leverage Document Retrival for Lawyers 
         step=1,
         on_change=reset_results,
     )
-    eval_mode = st.sidebar.checkbox("Evaluation mode")
+    # eval_mode = st.sidebar.checkbox("Evaluation mode")
     debug = st.sidebar.checkbox("Show debug info")
 
     # File upload block
@@ -215,9 +215,9 @@ This demo is supposed to show how we can leverage Document Retrival for Lawyers 
     if st.session_state.results:
 
         # Show the gold answer if we use a question of the given set
-        if eval_mode and st.session_state.answer:
-            st.write("## Correct answer:")
-            st.write(st.session_state.answer)
+        # if eval_mode and st.session_state.answer:
+        #     st.write("## Correct answer:")
+        #     st.write(st.session_state.answer)
 
         st.write("## Results:")
 
